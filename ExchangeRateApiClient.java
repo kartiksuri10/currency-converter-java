@@ -19,7 +19,7 @@ public class ExchangeRateApiClient {
     }
     public void load(){
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("C:/Users/karti/IdeaProjects/untitled/src/main/java/org/example/gui/jsonn"));
+            BufferedReader reader = new BufferedReader(new FileReader("C:/Users/jsonn")); // replace with your path of jsonn file
 
             StringBuilder response = new StringBuilder();
             String line;
