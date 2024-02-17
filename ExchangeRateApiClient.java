@@ -18,26 +18,12 @@ public class ExchangeRateApiClient {
        load();
     }
     public void load(){
-//        String apiKey = "b8e551ea2da62a08a983cb7b";
-//        String endpoint = "https://v6.exchangerate-api.com/v6/" + apiKey + "/latest/USD";
-        //HashMap<String,Double> map=new HashMap<>();
         try {
-            // Create URL object
-//            URL url = new URI(endpoint).toURL();
-//
-//            // Open connection
-//            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-//
-//            // Set request method
-//            connection.setRequestMethod("GET");
-
-            // Read response
-//            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             BufferedReader reader = new BufferedReader(new FileReader("C:/Users/karti/IdeaProjects/untitled/src/main/java/org/example/gui/jsonn"));
 
             StringBuilder response = new StringBuilder();
             String line;
-//            HashMap<String,Double> map=new HashMap<>();
+            
             while ((line = reader.readLine()) != null) {
                 if(line.contains("conversion_rates")){
                     while ((line = reader.readLine()) != null) {
@@ -49,12 +35,6 @@ public class ExchangeRateApiClient {
                 }
             }
             reader.close();
-//            // Print response
-//            System.out.println(response.toString());
-//
-//            // Close connection
-//            connection.disconnect();
-
         }
         catch (IOException e)
         {
