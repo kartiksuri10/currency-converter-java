@@ -54,7 +54,7 @@ public class currencyConverter extends JFrame {
                     if (result == -1)
                         JOptionPane.showMessageDialog(null, "INVALID INPUT");
                     else {
-                        JOptionPane.showMessageDialog(null, amount + " " + inputCurrency + " = " + result + " " + outputCurrency);
+                        JOptionPane.showMessageDialog(null, amount + " " + inputCurrency + " = " + result + " " + outputCurrency + "\n Last Updated: "+ obj.date);
                     }
                 }
             }
