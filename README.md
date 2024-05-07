@@ -4,7 +4,7 @@ The Currency Converter is a Java application that allows users to convert betwee
 ## Features
 Allows users to input an amount in a chosen currency and convert it to another chosen currency.
 Provides a dropdown menu for selecting input and output currencies from a wide range of options.
-Retrieves exchange rates from json file.
+Retrieves exchange rates from an external API.
 
 ## Usage
 1> Compile the Java file 'currencyConverter.java' .
